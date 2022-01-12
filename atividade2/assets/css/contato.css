@@ -13,6 +13,12 @@ body{
     background-color: grey;
 }
 
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -112,6 +118,10 @@ main{
     width: 400px;
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.5em;
+}
+
+.sombra-titulo{
+    text-shadow: 2px 2px 3px gray;
 }
 
 

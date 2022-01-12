@@ -13,6 +13,12 @@ body{
     background-color: grey;
 }
 
+.sticky{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 header{
     display: flex;
     align-items: center;
@@ -87,6 +93,14 @@ main{
     margin-right: 20px;
 }
 
+.foto-banda:hover{
+    box-shadow: 4px 4px 15px black;
+}
+
+.sombra-titulo{
+    text-shadow: 2px 2px 3px gray;
+}
+
 .intro{
     display: flex;
     flex-direction: column;
@@ -152,14 +166,35 @@ main{
 
 .spotify img{
     width: 150px;
-    padding: 10px;
+    margin: 10px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.spotify img:hover{
+    box-shadow: 4px 4px 10px black;
 }
 
 .spotify p{
     font-size: 2em;
 }
 
+.spotify p:hover{
+    text-shadow: 2px 2px 5px black;
+}
 
+.email{
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    width: 80px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.email:hover{
+    box-shadow: 3px 3px 10px black;
+}
 
 /* ---------------- FOOTER ---------------- */
 
