@@ -10,8 +10,10 @@ let botao = document.querySelector("#botao")
 
 function validaNome(){
     let txtNome = document.querySelector('#txtNome')
-    
-    if(nome.value.length < 3){
+
+    if(nome.value.length == 0){
+        txtNome.innerHTML = ''
+    } else if(nome.value.length < 3){
         txtNome.innerHTML = '<p>Nome inválido</p>'
         txtNome.style.color = 'red'
     } else {
@@ -24,7 +26,9 @@ function validaNome(){
 function validaEmail(){
     let txtEmail = document.querySelector('#txtEmail')
 
-    if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
+    if(email.value.length == 0){
+        txtEmail.innerHTML = ''
+    } else if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
         txtEmail.innerHTML = '<p>E-mail inválido</p>'
         txtEmail.style.color = 'red'
     } else {
@@ -37,16 +41,16 @@ function validaEmail(){
 function validaMensagem(){
     let txtMensagem = document.querySelector('#txtMensagem')
 
-    txtMensagem.style.display = 'block'
-
     if(mensagem.value.length < 10){
         txtMensagem.innerHTML = '<p>Digite mais para poder enviar.</p>'
         txtMensagem.style.color = 'gray'
+        mensagemOk = false
     } else if (mensagem.value.length > 50){
         txtMensagem.innerHTML = '<p>Texto muito grande. Digite menos de 100 caracteres.</p>'
         txtMensagem.style.color = 'red'
+        mensagemOk = false
     } else {
-        txtMensagem.style.display = 'none'
+        txtMensagem.innerHTML = ''
         mensagemOk = true
     }
 }
@@ -54,8 +58,10 @@ function validaMensagem(){
 function enviar(){
     if(nomeOk && emailOk && mensagemOk){
         alert('Formulário enviado com sucesso!')
+    } else if (nome.value.length == 0 || email.value.length == 0 || mensagem.value.length == 0){
+        alert('Preencha todos os campos para poder enviar!')
     } else {
-        alert('Preencha todo o formulário antes de enviar!')
+        alert('Preencha o formulário corretamente para poder enviar!')
     }
 }
 
