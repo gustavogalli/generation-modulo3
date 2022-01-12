@@ -35,23 +35,25 @@
             <img src="assets/img/reunion.jpg" alt="Membros do Pink Floyd se despedindo">
 
             <form class="formulario">
-                <div class="pergunta">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" onkeyup='validaNome()'>
-                    <div id="txtNome"></div>
+                <div class="pergunta-aviso">
+                    <div class="pergunta">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" onkeyup='validaNome()'>
+                    </div>
+                    <div id="txtNome" class="aviso"></div>
                 </div>
 
                 <div class="pergunta">
                     <label for="email">Email</label>
                     <input type="email" id="email" onkeyup='validaEmail()'>
-                    <div id="txtEmail"></div>
                 </div>
+                <div id="txtEmail" class="aviso"></div>
 
                 <div class="pergunta">
                     <label for="mensagem">Mensagem</label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" onkeyup='validaMensagem()'></textarea>
-                    <div id="txtMensagem"></div>
                 </div>
+                <div id="txtMensagem" class="aviso"></div>
             </form>
         </div>
 

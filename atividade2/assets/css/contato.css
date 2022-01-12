@@ -120,6 +120,20 @@ main{
     font-size: 1.5em;
 }
 
+.pergunta-aviso{
+    display: flex;
+    flex-direction: column;
+}
+
+.aviso{
+    height: 1em;
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 0.8em;
+}
+
 .sombra-titulo{
     text-shadow: 2px 2px 3px gray;
 }
