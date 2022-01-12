@@ -17,10 +17,11 @@ function validaNome(){
 function validaEmail(){
     let txtEmail = document.querySelector('#txtEmail')
 
-    if(email.value.indexOf('@') == -1){
+    if(email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){
         txtEmail.innerHTML = '<p>E-mail inválido</p>'
         txtEmail.style.color = 'red'
     } else {
-
+        txtEmail.innerHTML = '<p>E-mail válido</p>'
+        txtEmail.style.color = 'green'
     }
 }
