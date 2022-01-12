@@ -25,3 +25,18 @@ function validaEmail(){
         txtEmail.style.color = 'green'
     }
 }
+
+function validaMensagem(){
+    let txtMensagem = document.querySelector('#txtMensagem')
+
+    if(mensagem.value.length < 10){
+        txtMensagem.innerHTML = '<p>Mensagem muito pequena. Digite mais!</p>'
+        txtMensagem.style.color = 'gray'
+    } else if (mensagem.value.length > 50){
+        txtMensagem.innerHTML = '<p>Texto muito grande. Digite menos de 100 caracteres.</p>'
+        txtMensagem.style.color = 'red'
+    } else {
+        txtMensagem.innerHTML = '<p>Mensagem já pode ser enviada!</p>'
+        txtMensagem.style.color = 'green'
+    }
+}
