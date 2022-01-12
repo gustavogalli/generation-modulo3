@@ -138,6 +138,21 @@ main{
     text-shadow: 2px 2px 3px gray;
 }
 
+h2{
+    margin: 50px;
+}
+
+.botao{
+    background-color: black;
+    color: white;
+    width: 410px;
+    margin-right: 10px;
+    height: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    box-shadow: 2px 2px 2px black;
+}
+
 
 /* ---------------- FOOTER ---------------- */
 
